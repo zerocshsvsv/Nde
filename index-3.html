@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xoc21.bot | Modern Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Orbitron',sans-serif}
+body{
+min-height:100vh;
+background:linear-gradient(135deg,#0a1a2f,#0f3c68,#1fb6ff);
+color:#fff;overflow:hidden}
+
+/* SPLASH */
+#splash{
+position:fixed;inset:0;
+background:linear-gradient(160deg,#081427,#0d2c4d);
+display:flex;flex-direction:column;
+justify-content:center;align-items:center;
+z-index:999}
+#splash img{
+width:140px;border-radius:50%;
+box-shadow:0 0 30px #4fc3ff;
+animation:zoomIn 1.6s ease}
+#splash h1{
+margin-top:15px;font-size:2.3rem;
+color:#9adfff;text-shadow:0 0 15px #4fc3ff}
+#splash button{
+margin-top:30px;padding:12px 28px;
+border:none;border-radius:30px;
+background:#1fb6ff;color:#001;
+font-weight:700;cursor:pointer;
+box-shadow:0 0 20px #1fb6ff}
+
+@keyframes zoomIn{
+from{transform:scale(0.4);opacity:0}
+to{transform:scale(1);opacity:1}}
+
+/* MAIN */
+.container{
+min-height:100vh;
+display:flex;justify-content:center;
+align-items:center;padding:20px}
+.card{
+width:100%;max-width:420px;
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(18px);
+border-radius:22px;padding:30px;
+box-shadow:0 0 40px rgba(0,0,0,0.4);
+animation:float 6s ease-in-out infinite}
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-10px)}}
+
+.card h2{text-align:center;color:#bfe9ff;margin-bottom:10px}
+.card p{text-align:center;font-size:0.85rem;opacity:.85;margin-bottom:25px}
+
+.tools{display:flex;flex-direction:column;gap:14px}
+.btn{
+text-decoration:none;padding:14px;
+border-radius:16px;text-align:center;
+color:white;font-weight:600;
+background:linear-gradient(135deg,#1fb6ff,#0b3a6f);
+box-shadow:0 0 18px rgba(31,182,255,.6);
+transition:.3s}
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 28px rgba(31,182,255,1)}
+
+footer{margin-top:20px;font-size:.7rem;
+text-align:center;opacity:.6}
+</style>
+</head>
+
+<body>
+
+<div id="splash">
+<img src="https://k.top4top.io/p_3688ploi61.jpg">
+<h1>Xoc21.bot</h1>
+<button onclick="enterApp()">NEXT</button>
+</div>
+
+<div class="container">
+<div class="card">
+<h2>Tools Center</h2>
+<p>Modern Community & Bot Hub</p>
+
+<div class="tools">
+<a class="btn" href="https://wa.me/6285822247742" target="_blank">💬 WhatsApp Bot</a>
+<a class="btn" href="https://chat.whatsapp.com/COCCVMeR68P5eAd0bsiFGC?mode=gi_c" target="_blank">🚀 WhatsApp Group</a>
+<a class="btn" href="https://t.me/Oxocr" target="_blank">✈ Telegram @Oxocr</a>
+<a class="btn" href="https://wa.me/6285705544415" target="_blank">👨‍💻 Developer +62 857‑0554‑4415</a>
+</div>
+
+<footer>© 2026 Xoc21.bot • Modern Blue UI</footer>
+</div>
+</div>
+
+<script>
+function enterApp(){
+document.getElementById('splash').style.display='none';
+}
+</script>
+
+</body>
+</html>
